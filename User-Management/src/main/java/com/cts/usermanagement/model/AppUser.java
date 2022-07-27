@@ -2,13 +2,15 @@ package com.cts.usermanagement.model;
 
 import java.sql.Date;
 import org.springframework.data.annotation.Id;
-
-
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+@Entity
 public class AppUser {
 	
 	
 	@Id
-	
+	@GeneratedValue
 	private Integer id;
 	private String name;
 	//why string type for password
